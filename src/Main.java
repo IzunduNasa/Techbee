@@ -41,6 +41,7 @@ class Main <T>{
 
         //Test Java program to find duplicate elements in a String array.
         var strarr = new String[]{"a", "d", "c", "egg", "ball", "f", "apple", "a", "egg"};
+        System.out.println("String Duplicates: For array" +Arrays.toString(strarr));
         helpers.DuplicateChars(strarr);
 
         //Test Write a Java program to check if two arrays are equal.
