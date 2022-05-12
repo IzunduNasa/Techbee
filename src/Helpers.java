@@ -3,8 +3,8 @@ import java.util.*;
 class Helpers <T> {
     int Average(int[] Arr){
         int sum = 0;
-        for (int i = 0; i < Arr.length; i++) {
-            sum += Arr[i];
+        for (int j : Arr) {
+            sum += j;
         }
 
         return sum/Arr.length;
@@ -42,7 +42,7 @@ class Helpers <T> {
     }
 
     Object[] Copy(T[]Arr1, T[]Arr2){
-        ArrayList<T> list = new ArrayList<T>((Collection<? extends T>) Arrays.asList(Arrays.asList(Arr1), Arrays.asList(Arr2)));
+        ArrayList<T> list = new ArrayList<>((Collection<? extends T>) Arrays.asList(Arrays.asList(Arr1), Arrays.asList(Arr2)));
         Object[] ret = list.toArray();
         return ret;
     }
